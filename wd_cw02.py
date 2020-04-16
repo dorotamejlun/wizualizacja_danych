@@ -70,7 +70,7 @@ for i in range (1, int(h)+1 ):
         sys.stdout.write('A')
     sys.stdout.write('\n')
 
-print("\nzad11 - uncompleted")
+print("\nzad11 - incompleted")
 import sys
 import math
 H = int(input("Height: "))
