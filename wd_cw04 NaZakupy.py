@@ -14,16 +14,15 @@ class NaZakupy:
         print(self.nazwa_produktu,self.ilosc,self.jednostka_miary)
     def ile_kosztuje(self):
         print(self.ilosc*self.cena_jed)
-def main():
-    pr1 = NaZakupy("orzeszki",2,"kg",50)
-    pr2 = NaZakupy("jabłko",1,"kg",5)
+        
+pr1 = NaZakupy("orzeszki",2,"kg",50)
+pr2 = NaZakupy("jabłko",1,"kg",5)
 
-    pr1.wyswietl()
-    pr2.wyswietl()
-    pr1.ile_produktu()
-    pr2.ile_produktu()
-    pr1.ile_kosztuje()
-    pr2.ile_kosztuje()
-if __name__=="__main__":
-    main()
+pr1.wyswietl()
+pr2.wyswietl()
+pr1.ile_produktu()
+pr2.ile_produktu()
+pr1.ile_kosztuje()
+pr2.ile_kosztuje()
+
 
