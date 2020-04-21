@@ -70,23 +70,31 @@ for i in range (1, int(h)+1 ):
         sys.stdout.write('A')
     sys.stdout.write('\n')
 
-print("\nzad11 - incompleted")
+print("\nzad11")
+
 import sys
 import math
 H = int(input("Height: "))
 s = math.ceil(H/2)
-
-if (H>=3 and H<9 and H%2==1):
-
-    for i in range (1, H+1):
-        for j in range (1, H+1):
-            if j != s:
-                sys.stdout.write(' ')
-            else:
-                sys.stdout.write('o')
-        sys.stdout.write('\n')
-else:
-    print("ERROR")
-
+n=0
+for i in range(1, s + 1):
+    for j in range(1, (s - i) + 1):
+        print(end=" ")
+    while n != (2 * i - 1):
+        print("o", end="")
+        n = n + 1
+    n = 0
+    print()
+k=1
+n=1
+for i in range(1, s):
+    for j in range(1, k + 1):
+        print(end=" ")
+    k = k + 1
+    while n <= (2 * (s - i) - 1):
+        print("o", end="")
+        n = n + 1
+    n = 1
+    print()
 
 
