@@ -37,10 +37,10 @@ while( w!='q' ):
         if ( w == 'q' ):
             print("Koniec")
         if ( w == 'g'):
-            print(rob.idz_w_gore())
+            rob.idz_w_gore()
         if ( w == 'd'):
-            print(rob.idz_w_dol())
+            rob.idz_w_dol()
         if ( w == 'p'):
-            print(rob.idz_w_prawo())
+            rob.idz_w_prawo()
         if ( w == 'l'):
-            print(rob.idz_w_lewo())
+            rob.idz_w_lewo()
