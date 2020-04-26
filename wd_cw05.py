@@ -30,3 +30,26 @@ print("Rodz swetra: ",sweter.wyswietl_dane2())
 print("Dane: ", sweter.wyswietl_dane())
 print("Material: ",ubrania.rodz)
 
+print("zad2")
+class Ksztalty:
+    def __init__(self, x, y):
+        self.x=x
+        self.y=y
+        self.opis = "To będzie klasa dla ogólnych kształtów"
+
+class Kwadrat(Ksztalty):
+
+    def __init__(self, x):
+        self.x = x
+        self.y = x
+
+    def __str__(self):
+        return 'Kwadrat o boku {}'.format(self.x)
+    def __add__(self, other):
+        return Kwadrat(self.x+other.x)
+
+kw = Kwadrat(5)
+print(kw)
+print(kw+kw)
+
+
